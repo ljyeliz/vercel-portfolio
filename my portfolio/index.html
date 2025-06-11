@@ -50,3 +50,9 @@
     <script src="script.js"></script>
 </body>
 </html>
+<script>
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        this.textContent = document.body.classList.contains('dark-mode') ? '☀️ Switch Mode' : '🌙 Switch Mode';
+    });
+</script>
